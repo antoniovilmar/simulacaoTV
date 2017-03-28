@@ -22,6 +22,14 @@ public class Principal {
 		tvDoQuarto.setModelo("Samsung");
 		System.out.println("Modelo alterado para " + tvDoQuarto.getModelo());
 
+		ControleRemoto controle = new ControleRemoto(tvDoQuarto);
+
+		controle.desligarTv();
+		System.out.println("Controle Remoto - Tv está ligada? " + tvDoQuarto.isLigada());
+		controle.ligarTv();
+		System.out.println("Controle Remoto - Tv está ligada? " + tvDoQuarto.isLigada());
+		controle.irParaCanal(36);
+		System.out.println("Controle Remoto - Cana da  Tv é: "+tvDoQuarto.getCanal());
 	}
 
 }
