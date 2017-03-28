@@ -53,6 +53,10 @@ public class TV {
 		return this.volume;
 	}
 	
+	public void modificarCanal(int canal){
+		this.canal = canal;
+	}
+	
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
